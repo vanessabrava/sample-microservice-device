@@ -1,0 +1,32 @@
+﻿jobs:
+- job: Build
+  pool:
+    name: Hosted Ubuntu 1604
+  variables:
+    solution: 'Sample.Microservice.Device.sln'
+    buildPlatform: 'Any CPU'
+    buildConfiguration: 'Release'
+    DOTNET_SKIP_FIRST_TIME_EXPERIENCE: true
+    workspace:
+    clean: resources
+  steps:  
+  - script: dotnet build $(System.DefaultWorkingDirectory)/$(solution) --configuration $(buildConfiguration)
+    displayName: 'Build dotnet $(buildConfiguration)'
+- job: Docker
+  pool:
+    name: Hosted Ubuntu 1604
+  steps:
+  - task: DockerCompose@0
+    displayName: 'Run a Docker Compose command'
+    inputs:
+      containerregistrytype: 'Container Registry'
+      dockerRegistryEndpoint: 'Docker Hub'
+      dockerComposeFile: 'docker-compose.yml'
+      dockerComposeCommand: build
+      dockerComposeFileArgs: 'TAG=$(Build.SourceVersion)'
+  - task: Docker@2
+  inputs:
+    containerRegistry: 'nerd-all-debug-registry'
+    repository: '$(Build.Repository.Name)'
+    command: 'push'
+    tags: '$(Build.SourceVersion)'
