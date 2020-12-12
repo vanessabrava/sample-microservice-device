@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>bin\Debug\netcoreapp3.1\Sample.Microservice.Device.Api.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>bin\Release\netcoreapp3.1\Sample.Microservice.Device.Api.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="5.6.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="5.6.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Sample.Microservice.Device.App.Messages\Sample.Microservice.Device.App.Messages.csproj" />
+    <ProjectReference Include="..\Sample.Microservice.Device.App.Services\Sample.Microservice.Device.App.Services.csproj" />
+    <ProjectReference Include="..\Sample.Microservice.Device.Infra.CrossCutting.Common\Sample.Microservice.Device.Infra.CrossCutting.Common.csproj" />
+    <ProjectReference Include="..\Sample.Microservice.Device.Infra.CrossCutting.DI\Sample.Microservice.Device.Infra.CrossCutting.DI.csproj" />
+    <ProjectReference Include="..\Sample.Microservice.Device.Infra.CrossCutting.Options\Sample.Microservice.Device.Infra.CrossCutting.Options.csproj" />
+    <ProjectReference Include="..\Sample.Microservice.Device.Infra.CrossCutting.Services\Sample.Microservice.Device.Infra.CrossCutting.Services.csproj" />
+  </ItemGroup>
+
+
+</Project>

@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Sample.Microservice.Device.Infra.DataAccess\Sample.Microservice.Device.Infra.DataAccess.csproj" />
+    <ProjectReference Include="..\Sample.Microservice.Device.Service.Model\Sample.Microservice.Device.Service.Model.csproj" />
+  </ItemGroup>
+
+</Project>

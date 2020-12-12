@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Sample.Microservice.Device.Infra.CrossCutting.Model\Sample.Microservice.Device.Infra.CrossCutting.Model.csproj" />
+  </ItemGroup>
+
+</Project>

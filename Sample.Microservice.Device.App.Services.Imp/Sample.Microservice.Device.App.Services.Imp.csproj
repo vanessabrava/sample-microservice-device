@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Sample.Microservice.Device.App.Mapper\Sample.Microservice.Device.App.Mapper.csproj" />
+    <ProjectReference Include="..\Sample.Microservice.Device.App.Messages\Sample.Microservice.Device.App.Messages.csproj" />
+    <ProjectReference Include="..\Sample.Microservice.Device.App.Services\Sample.Microservice.Device.App.Services.csproj" />
+    <ProjectReference Include="..\Sample.Microservice.Device.Service\Sample.Microservice.Device.Service.csproj" />
+  </ItemGroup>
+
+</Project>
