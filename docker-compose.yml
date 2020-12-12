@@ -1,0 +1,9 @@
+version: '3.4'
+
+services:
+  sample.microservice.device.api:
+    image: vanessabrava/sample-microservice-device:${TAG}
+    build:
+      context: .
+      dockerfile: Sample.Microservice.Device.Api/Dockerfile
+    container_name: sample-microservice-device

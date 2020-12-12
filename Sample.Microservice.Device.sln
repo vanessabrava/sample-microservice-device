@@ -8,6 +8,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Solution Items", "2. Sol
 		.gitignore = .gitignore
 		NuGet.config = NuGet.config
 		README.md = README.md
+		Sample.Microservice.Device.yaml = Sample.Microservice.Device.yaml
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Device Microservice", "1. Device Microservice", "{64108F82-1C69-4B40-A3F8-42B0D212728C}"
@@ -65,6 +66,8 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sample.Microservice.Device.Infra.DataAccess", "Sample.Microservice.Device.Infra.DataAccess\Sample.Microservice.Device.Infra.DataAccess.csproj", "{AA494F22-B0FB-43A7-A0F3-48947FAE2D84}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sample.Microservice.Device.Infra.DataAccess.MySql", "Sample.Microservice.Device.Infra.DataAccess.MySql\Sample.Microservice.Device.Infra.DataAccess.MySql.csproj", "{5100D8F9-FF04-44D5-BA5C-B8C1AD45E508}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{4155E2F8-A4AF-4227-88F7-07A41B73D611}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -132,6 +135,10 @@ Global
 		{5100D8F9-FF04-44D5-BA5C-B8C1AD45E508}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5100D8F9-FF04-44D5-BA5C-B8C1AD45E508}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5100D8F9-FF04-44D5-BA5C-B8C1AD45E508}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4155E2F8-A4AF-4227-88F7-07A41B73D611}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4155E2F8-A4AF-4227-88F7-07A41B73D611}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4155E2F8-A4AF-4227-88F7-07A41B73D611}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4155E2F8-A4AF-4227-88F7-07A41B73D611}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -164,6 +171,7 @@ Global
 		{DF148BEF-DFE7-432E-896F-642CA3B23B25} = {AE62586D-31C1-4DA2-8322-8777008EFA0D}
 		{AA494F22-B0FB-43A7-A0F3-48947FAE2D84} = {8597B719-5A52-47F7-8B60-1CA53AFDED79}
 		{5100D8F9-FF04-44D5-BA5C-B8C1AD45E508} = {8597B719-5A52-47F7-8B60-1CA53AFDED79}
+		{4155E2F8-A4AF-4227-88F7-07A41B73D611} = {5B4A7A76-7699-4029-8F42-6EC470BD037E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1DE3A3A0-C34D-4D0A-A34B-529A42C31033}
