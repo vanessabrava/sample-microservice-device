@@ -14,6 +14,6 @@ namespace Sample.Microservice.Device.App.Messages
         public string DeviceRegion { get; set; }
 
         [JsonPropertyName("captureDate"), Required]
-        public DateTime CaptureDate { get; set; }
+        public DateTime? CaptureDate { get; set; }
     }
 }
