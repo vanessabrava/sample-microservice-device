@@ -108,6 +108,6 @@ As configurações para enviar objetos ao event hub.
 ## API REST
 Para ver o release pipeline [clique aqui](https://dev.azure.com/NerdAllDebug/PalestraMVP/_release?_a=releases&view=mine&definitionId=1).
 
-#### Production 
+#### Apresentação 
 * [![Build Status](https://vsrm.dev.azure.com/NerdAllDebug/_apis/public/Release/badge/98c93b17-e3bd-4372-97ce-9b2b54909071/1/1)](https://vsrm.dev.azure.com/NerdAllDebug/_apis/public/Release/badge/98c93b17-e3bd-4372-97ce-9b2b54909071/1/1)
 * Para ver a documentação swagger [clique aqui](https://sample-microservice-device.azurewebsites.net/swagger/index.html).
