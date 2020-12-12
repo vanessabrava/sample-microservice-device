@@ -16,7 +16,7 @@ namespace Sample.Microservice.Device.Api.Configurations
         public static WebHostBuilderContext ConfigAppSettingsFiles(this WebHostBuilderContext hostingContext, IConfigurationBuilder configuration)
         {
             if (hostingContext.HostingEnvironment.EnvironmentName != "Development")
-                configuration.AddJsonFile("appsettings/appsettings.json".BindEnvironmentVariable(), optional: true, reloadOnChange: true);
+                configuration.AddJsonFile("appsettings/appsettings.json", optional: true, reloadOnChange: true);
 
             configuration.AddJsonFile($"appsettings/appsettings.{hostingContext.HostingEnvironment.EnvironmentName}.json", optional: true, reloadOnChange: true);
 
