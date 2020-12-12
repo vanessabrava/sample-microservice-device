@@ -19,8 +19,9 @@ jobs:
   - task: DockerCompose@0
     displayName: 'Run a Docker Compose command'
     inputs:
-      containerregistrytype: 'Container Registry'
-      dockerRegistryEndpoint: 'Docker Hub'
+      containerregistrytype: 'Azure Container Registry'
+      azureSubscription: 'Assinatura do Visual Studio Enterprise(041ecd39-cd6e-4c82-972b-b8b1b083b182)'
+      azureContainerRegistry: '{"loginServer":"nerdalldebug.azurecr.io", "id" : "/subscriptions/041ecd39-cd6e-4c82-972b-b8b1b083b182/resourceGroups/nerd_all_debug/providers/Microsoft.ContainerRegistry/registries/nerdalldebug"}'
       dockerComposeFile: 'docker-compose.yml'
       dockerComposeCommand: build
       dockerComposeFileArgs: 'TAG=$(Build.SourceVersion)'
