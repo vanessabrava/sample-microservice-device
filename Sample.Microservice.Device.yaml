@@ -1,4 +1,4 @@
-﻿jobs:
+jobs:
 - job: Build
   pool:
     name: Hosted Ubuntu 1604
@@ -25,8 +25,8 @@
       dockerComposeCommand: build
       dockerComposeFileArgs: 'TAG=$(Build.SourceVersion)'
   - task: Docker@2
-  inputs:
-    containerRegistry: 'nerd-all-debug-registry'
-    repository: '$(Build.Repository.Name)'
-    command: 'push'
-    tags: '$(Build.SourceVersion)'
+    inputs:
+      containerRegistry: 'nerd-all-debug-registry'
+      repository: '$(Build.Repository.Name)'
+      command: 'push'
+      tags: '$(Build.SourceVersion)'
