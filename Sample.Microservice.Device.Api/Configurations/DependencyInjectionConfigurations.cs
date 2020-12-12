@@ -1,6 +1,7 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Sample.Microservice.Device.Infra.CrossCutting.DI;
+using Sample.Microservice.Device.Infra.CrossCutting.EventHub.Extensions;
 
 namespace Sample.Microservice.Device.Api.Configurations
 {
@@ -8,7 +9,7 @@ namespace Sample.Microservice.Device.Api.Configurations
     {
         public static IServiceCollection ConfigureDI(this IServiceCollection services, IConfiguration configuration)
         {
-            //services.AddHostApiLog(configuration);
+            services.AddEventHub(configuration);
 
             DIFactory.ConfigureDI(services);
 

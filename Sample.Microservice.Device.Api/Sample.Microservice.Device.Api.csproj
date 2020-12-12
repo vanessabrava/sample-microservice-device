@@ -25,6 +25,7 @@
     <ProjectReference Include="..\Sample.Microservice.Device.App.Services\Sample.Microservice.Device.App.Services.csproj" />
     <ProjectReference Include="..\Sample.Microservice.Device.Infra.CrossCutting.Common\Sample.Microservice.Device.Infra.CrossCutting.Common.csproj" />
     <ProjectReference Include="..\Sample.Microservice.Device.Infra.CrossCutting.DI\Sample.Microservice.Device.Infra.CrossCutting.DI.csproj" />
+    <ProjectReference Include="..\Sample.Microservice.Device.Infra.CrossCutting.EventHub\Sample.Microservice.Device.Infra.CrossCutting.EventHub.csproj" />
     <ProjectReference Include="..\Sample.Microservice.Device.Infra.CrossCutting.Options\Sample.Microservice.Device.Infra.CrossCutting.Options.csproj" />
     <ProjectReference Include="..\Sample.Microservice.Device.Infra.CrossCutting.Services\Sample.Microservice.Device.Infra.CrossCutting.Services.csproj" />
   </ItemGroup>
